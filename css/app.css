@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style:none;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* haeder-start */
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    width: 60%;
+}
+
+.list > ul {
+    display: flex;
+}
+
+.list ul > li {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: red;
+    
+}
+
+
+.list > ul > li {
+    position: relative;
+}
+
+.list > ul > li > ul {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+}
+
+.list > ul >li:hover > ul {
+    display: block;
+    animation: opacity 1s;
+    animation-fill-mode: both;
+    background-color: red;
+    
+}
+
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+.list > ul > li:hover{
+    background-color: coral;    
+}
+
+
+
+.list > ul > li > ul >li:hover {
+    background-color: coral;  
+}
+
+/* haeder-end */
+
+
+/* second-section start */
+#second {
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/img00.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+
+}
+/* second-section end */
+
+
+/* third-section start */
+#Third{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+
+
+.notice> h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.notice > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.notice > ul > li {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.notice > ul > li:nth-child(2){
+    background-color: cornflowerblue;
+}
+
+.notice > ul > li:nth-child(4){
+    background-color: cornflowerblue;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.partner > h1{
+    text-align: center;
+}
+.partner > img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+/* third-section end */
+
+
